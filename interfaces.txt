@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practice
+{
+    interface  person
+    {
+        void show();
+        
+    }
+   
+    class parttimeEmp : person
+    {
+        public void show()
+        {
+            Console.WriteLine("this is method of interface ");
+        }
+    }
+   
+   //interface donot have constructor or destructors 
+   //interface donot have feild i.e variables ,constants or data 
+  
+
+    class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+
+
+
+            parttimeEmp p = new parttimeEmp();
+            p.show();
+
+
+
+            Console.ReadLine();
+        }
+
+
+    }
+}
+

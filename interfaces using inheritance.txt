@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practice
+{
+interface i1
+    {
+        void print();
+    }
+
+    interface i2
+    {
+        void print1();
+    }
+
+interface i3 : i1, i2
+    {
+        void print2();
+    }
+    class  hello: i3
+    {
+        public void print()
+        {
+            Console.WriteLine("this is function of interface 1");
+        }
+        public void print1()
+        {
+            Console.WriteLine("this is function of interface 2");
+        }
+        public void print2()
+        {
+            Console.WriteLine("this is function of interface 3");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            hello h = new hello();
+            h.print();
+            h.print1();
+            h.print2();
+
+
+
+            Console.ReadLine();
+        }
+
+
+    }
+}
+
