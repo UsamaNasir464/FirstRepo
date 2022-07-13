@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    abstract class person1
+    abstract class person
     {
         public string name;
         public uint age;
@@ -15,7 +15,7 @@ namespace Practice
 
         public abstract void printDetails();
     }
-    class student : person1
+    class student : person
     {
         public int rollno;
         public int fee;
@@ -30,7 +30,7 @@ namespace Practice
         }
     }
 
-    class teacher : person1
+    class teacher : person
     {
         public string qualification;
         public int salary;
@@ -50,11 +50,19 @@ namespace Practice
             {
 
                 student anas = new student();
-                anas.name = "Anas";
+                anas.name = "Junaid";
                 anas.phone = "030666463";
                 anas.rollno = 1;
                 anas.fee = 4000;
                 anas.age = 14;
+                anas.printDetails();
+
+             student anas = new student();
+                anas.name = "Bilal";
+                anas.phone = "030666463";
+                anas.rollno = 2;
+                anas.fee = 4500;
+                anas.age = 15;
                 anas.printDetails();
 
                 Console.WriteLine("----------- Teacher Details-------------");
@@ -68,7 +76,7 @@ namespace Practice
 
  Console.WriteLine("----------- Teacher Details-------------");
                 teacher t = new teacher();
-                t.name = "Aezaz ";
+                t.name = "Ahsan";
                 t.phone = "74478576846";
                 t.qualification = "bachelors ";
                 t.salary = 10000;
